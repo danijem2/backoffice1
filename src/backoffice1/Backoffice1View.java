@@ -186,10 +186,14 @@ H2HClient h2h = null;
         javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
         jIssuingMenu = new javax.swing.JMenu();
         jMenuIssuingNew = new javax.swing.JMenu();
+        jMenuItemNewPerson = new javax.swing.JMenuItem();
         jMenuItemAddWallet = new javax.swing.JMenuItem();
         jMenuItemAddAccount = new javax.swing.JMenuItem();
         jMenuAddDocument = new javax.swing.JMenuItem();
         jMenuAcquiring = new javax.swing.JMenu();
+        jMenuTransaction = new javax.swing.JMenu();
+        jMenuSettlement = new javax.swing.JMenu();
+        jMenuAdmin = new javax.swing.JMenu();
         javax.swing.JMenu helpMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         statusPanel = new javax.swing.JPanel();
@@ -595,6 +599,10 @@ H2HClient h2h = null;
         jMenuIssuingNew.setText(resourceMap.getString("jMenuIssuingNew.text")); // NOI18N
         jMenuIssuingNew.setName("jMenuIssuingNew"); // NOI18N
 
+        jMenuItemNewPerson.setText(resourceMap.getString("jMenuItemNewPerson.text")); // NOI18N
+        jMenuItemNewPerson.setName("jMenuItemNewPerson"); // NOI18N
+        jMenuIssuingNew.add(jMenuItemNewPerson);
+
         jMenuItemAddWallet.setText(resourceMap.getString("jMenuItemAddWallet.text")); // NOI18N
         jMenuItemAddWallet.setName("jMenuItemAddWallet"); // NOI18N
         jMenuItemAddWallet.addActionListener(new java.awt.event.ActionListener() {
@@ -624,6 +632,18 @@ H2HClient h2h = null;
         jMenuAcquiring.setText(resourceMap.getString("jMenuAcquiring.text")); // NOI18N
         jMenuAcquiring.setName("jMenuAcquiring"); // NOI18N
         menuBar.add(jMenuAcquiring);
+
+        jMenuTransaction.setText(resourceMap.getString("jMenuTransaction.text")); // NOI18N
+        jMenuTransaction.setName("jMenuTransaction"); // NOI18N
+        menuBar.add(jMenuTransaction);
+
+        jMenuSettlement.setText(resourceMap.getString("jMenuSettlement.text")); // NOI18N
+        jMenuSettlement.setName("jMenuSettlement"); // NOI18N
+        menuBar.add(jMenuSettlement);
+
+        jMenuAdmin.setText(resourceMap.getString("jMenuAdmin.text")); // NOI18N
+        jMenuAdmin.setName("jMenuAdmin"); // NOI18N
+        menuBar.add(jMenuAdmin);
 
         helpMenu.setText(resourceMap.getString("helpMenu.text")); // NOI18N
         helpMenu.setName("helpMenu"); // NOI18N
@@ -918,9 +938,13 @@ String Model;
     private javax.swing.JList jListSex;
     private javax.swing.JMenu jMenuAcquiring;
     private javax.swing.JMenuItem jMenuAddDocument;
+    private javax.swing.JMenu jMenuAdmin;
     private javax.swing.JMenu jMenuIssuingNew;
     private javax.swing.JMenuItem jMenuItemAddAccount;
     private javax.swing.JMenuItem jMenuItemAddWallet;
+    private javax.swing.JMenuItem jMenuItemNewPerson;
+    private javax.swing.JMenu jMenuSettlement;
+    private javax.swing.JMenu jMenuTransaction;
     private javax.swing.JPanel jPanelAddAccount;
     private javax.swing.JPanel jPanelAddWallet;
     private javax.swing.JScrollPane jScrollPane1;

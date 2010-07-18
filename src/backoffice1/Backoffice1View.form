@@ -670,6 +670,12 @@
                 <Property name="name" type="java.lang.String" value="jMenuIssuingNew" noResource="true"/>
               </Properties>
               <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNewPerson">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="jMenuItemNewPerson.text"/>
+                    <Property name="name" type="java.lang.String" value="jMenuItemNewPerson" noResource="true"/>
+                  </Properties>
+                </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAddWallet">
                   <Properties>
                     <Property name="text" type="java.lang.String" resourceKey="jMenuItemAddWallet.text"/>
@@ -702,6 +708,24 @@
           <Properties>
             <Property name="text" type="java.lang.String" resourceKey="jMenuAcquiring.text"/>
             <Property name="name" type="java.lang.String" value="jMenuAcquiring" noResource="true"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenuTransaction">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jMenuTransaction.text"/>
+            <Property name="name" type="java.lang.String" value="jMenuTransaction" noResource="true"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenuSettlement">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jMenuSettlement.text"/>
+            <Property name="name" type="java.lang.String" value="jMenuSettlement" noResource="true"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenuAdmin">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jMenuAdmin.text"/>
+            <Property name="name" type="java.lang.String" value="jMenuAdmin" noResource="true"/>
           </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="helpMenu">
